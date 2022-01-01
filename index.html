@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Fast Food</title>
+    <Style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            width: 15%;
+            height: 100px;
+            float: left;
+        }
+
+        .foody {
+            text-decoration: none;
+            font-size: 35px;
+            font-family: monospace;
+            font-weight: bold;
+            color: black;
+            margin-left: 80px;
+            margin-top: 25px;
+            border-bottom: 20px solid rgb(241, 168, 32);
+            border-width: 18px;
+
+        }
+
+
+        .nav {
+            width: 84.7%;
+            height: 100px;
+            float: right;
+        }
+
+        .list {
+
+            font-size: 25px;
+            float: right;
+            list-style: none;
+            display: inline;
+            color: black;
+            margin-right: 30px;
+            margin-left: 15px;
+            margin-top: 35px;
+            transition: 0.5s;
+            font-weight: bold;
+        }
+        .list1{
+            font-size: 25px;
+            float: right;
+            list-style: none;
+            display: inline;
+            color: black;
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-top: 15px;
+            transition: 0.5s;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .line:hover {
+            border-bottom: 2px solid black;
+            color: black;
+        }
+
+        .line1:hover {
+            color: rgb(245, 51, 51);
+        }
+
+
+        .btn1 {
+            background-color: rgb(236, 60, 60);
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            width: 115px;
+            height: 35px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+
+        .btn1:hover {
+            transform: scale(1.1);
+            background-color: gray;
+        }
+
+        .btn2 {
+            background-color: rgb(236, 60, 60);
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            width: 110px;
+            height: 38px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+
+        .btn2:hover {
+            transform: scale(1.1);
+            background-color: gray;
+        }
+
+        .page1 {
+            padding-left: 110px;
+            margin-bottom: 50px;
+
+        }
+
+        .heading {
+            font-size: 40px;
+            
+        }
+
+        .para {
+            font-size: 20px;
+
+        }
+
+        .side1 {
+            padding: 10px;
+        }
+
+        .side2 {
+            margin-left: 100px;
+            padding: 0px;
+        }
+
+        .upper {
+            color: goldenrod;
+            font-size: 20px;
+        }
+
+        .heading2 {
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+        .side3 {
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            height: 830px;
+
+        }
+
+        .box1 {
+            width: 40%;
+            height: 250px;
+            float: left;
+            margin-left: 80px;
+            border-radius: 15px;
+            box-shadow: 1px 8px 6px 2px rgb(180, 179, 179);
+        }
+
+        .box2 {
+            width: 40%;
+            height: 250px;
+            float: left;
+            margin-left: 80px;
+            margin-top: 35px;
+            border-radius: 15px;
+            box-shadow: 1px 8px 8px 2px rgb(141, 140, 140);
+
+        }
+        .img{
+            width: 50%;
+            height: 220px;
+            border-radius: 10px;
+            margin-left: 240px;
+            margin-top: -650px;
+        }
+        #margin1{
+            margin-right: 400px;
+        }
+        .container1{
+            width: 100%;
+            height: 230px;
+        }
+        .f1{
+            width: 40%;
+            height: 100%;
+            float: left;
+            
+        }
+        .f2{
+            width: 20%;
+            height: 100%;
+            float: right;
+            padding: 20px;
+            
+        }
+        .fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.heading3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.last{
+    margin-left: 50px;
+}
+.heading4{
+    font-weight: bold;
+    font-size: 30px;
+}
+.end{
+    width: 100%;
+    height: 230px;
+    background-color: cornsilk;
+}
+.happy:hover{
+        color: goldenrod;
+}
+.special{
+    font-size: 5000;
+}
+.rupee{
+    font-size: 30px;
+    color: rgb(206, 206, 14);
+}
+.sleep{
+    margin-bottom: 1500px;
+}
+.next{
+    padding-bottom: 1200px;
+}
+
+    </Style>
+</head>
+
+<body>
+    <header>
+        <section class="logo">
+            <h2 class="foody">Foody</h2>
+        </section>
+        <Section class="nav">
+            <ul>
+                <li class="list"><a href="#"><button class="btn1">Sign in</button></a></li>
+                <li class="list1"><a href="#" class="line1"><i class="fa fa-lock"></i></a></li>
+                <li class="list1"><a href="#" class="line1"><i class="fa fa-search"></i></a></li>
+                <li class="list"><a href="#" class="line">Contact</a></li>
+                <li class="list"><a href="#" class="line">Menu</a></li>
+                <li class="list"><a href="#" class="line">About</a></li>
+                <li class="list"><a href="#" class="line">Home</a></li>
+            </ul>
+        </Section>
+    </header>>
+    <table width="100%" height="630px">
+        <tr class="next">
+            <td class="page1" width="50%">
+                <h1 class="heading"> Real Food</h1>
+                <h1 class="heading">Delivered</h1>
+                <br>
+                <p class="para">Would didn't the was decided I alone, not a what <br>
+                    acting indication out which lift from about <br>
+                    completely first city.
+                </p>
+                <br>
+                <br>
+                <br>
+                <span><button class="btn2">Explore Food</button></a></span>
+            </td>
+            <td width="50%" class="side1">
+                <img src="image/2.jpg" alt="" width="80%" height="610px">
+            </td>
+
+
+        </tr>
+
+    </table>
+
+    <table width="100%" height="630px">
+        <tr>
+            <td width="50%">
+                <img src="image/3.jpg" alt="" width="80%" height="630px" class="side2">
+            </td>
+            <td class="page1" width="50%">
+                <h3 class="upper">ABOUT US</h3> <br>
+                <h1 class="heading"> Dedicated To</h1>
+                <h1 class="heading">Delight You</h1>
+                <br>
+                <p class="para">Than the quite so go an world of one more <br>
+                    a their stiff a having arranged kind a so <br>
+                    discipline for a stands reportes fal where is <br>
+                    our self-interest.
+                </p>
+                <br>
+                <br>
+                <br>
+                <span><button class="btn2">Read More</button></a></span>
+            </td>
+
+        </tr>
+    </table>
+    <table width="100%" height="400px">
+        <tr>
+            <td class="page1" width="50%">
+                <h3 class="upper">SERVICES</h3> <br>
+                <h1 class="heading"> What We Can</h1>
+                <h1 class="heading">Do For You</h1>
+                <br>
+                <h2 class="heading2">
+                    Buffet service
+                </h2>
+                <p class="para">Good option in phase each of it <br>
+                    away it he continued room <br>
+                    have throungly.
+                </p>
+                <br>
+                <br>
+                <h2 class="heading2">
+                    Food delivery
+                </h2>
+                <p class="para">Good option in phase each of it <br>
+                    away it he continued room <br>
+                    have throungly.
+                </p>
+                <br>
+                <br>
+                <h2 class="heading2">
+                    Healthy food
+                </h2>
+                <p class="para">Good option in phase each of it <br>
+                    away it he continued room <br>
+                    have throungly.
+                </p>
+                <br>
+                <br>
+            </td>
+            <td width="50%" class="side1">
+                <img src="image/4.jpg" alt="" width="80%" height="650px" class="side3">
+            </td>
+
+
+        </tr>
+
+    </table>
+    <section class="container">
+        <h3 class="upper" style="text-align: center;">MENU</h3> <br>
+        <h1 class="heading" style="text-align: center;">Try Our Special</h1>
+        <h1 class="heading" style="text-align: center;">Recipes</h1>
+        <br>
+        <br>
+        <section class="box1">
+            <h2 class="special">Roasted Fall
+            </h2>
+            <h2 class="special">Squash
+            </h2><br>
+            <p class="special">Mushrooms & Chili</p><br><br><br><br><br><br>
+            <p class="rupee">&dollar;5.60</p>
+            
+            <img src="img/3.jpg" alt="" class="img"></section>
+        <section class="box1">
+            <h2 class="special">Blue Cheese
+            </h2>
+            <h2 class="special">Salad
+            </h2><br>
+            <p class="special">Vegetable Curry</p><br><br><br><br><br><br>
+            <p class="rupee">&dollar;15.00</p>
+            <img src="img/8.jpg" alt="" class="img"></section>
+        <section class="box2">
+            <h2 class="special">Wheat Berry
+            </h2>
+            <h2 class="special">Salad
+            </h2><br>
+            <p class="special">Chicken & Sauce</p><br><br><br><br><br><br>
+            <p class="rupee">&dollar;12.20</p>
+            <img src="img/1.jpg" alt="" class="img"></section>
+        <section class="box2">
+            <h2 class="special">Paneer Tikka
+            </h2>
+            <h2 class="special">Masala
+            </h2><br>
+            <p class="special">Spicy & Masala</p><br><br><br><br><br><br>
+            <p class="rupee">&dollar;8.50</p>
+            <img src="img/2.jpg" alt="" class="img"></section>
+
+    </section>
+    <table width="100%" height="630px">
+        <tr>
+            <td width="50%">
+                <img src="image/1.jpg" alt="" width="70%" height="590px" class="side2">
+            </td>
+            <td class="page1" width="50%">
+                <h3 class="upper">DOWNLOAD NOW</h3> <br>
+                <h1 class="heading"> Download Our</h1>
+                <h1 class="heading">App Today</h1>
+                <br>
+                <p class="para">Than the quite so go an world of one more <br>
+                    a their stiff a having arranged kind a so <br>
+                    discipline for a stands reportes fal where is <br>
+                    our self-interest.
+                </p>
+                <br>
+                <br>
+                <span><img src="img/op.png" alt="" width="60%" height="60px"></span>
+            </td>
+
+        </tr>
+    </table>
+  <section class="end">
+      <section class="container1">
+    <section class="f1">
+        <h2 class="heading3">
+            Foody
+        </h2> <br> <br> <br>
+        <p class="last">
+            <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        </p>
+        <br>
+        <p class="last">Copyright &copy; 2021, Made by Mubashir Arif</p>
+    </section>
+    <section class="f2">
+        <p class="heading4">
+            Support
+        </p>  <br>
+        <p>
+            <a href="#" class="happy">Help Center</a> <br> <br>
+        </p>
+        <p>
+            <a href="#" class="happy">Connect</a> <br> <br>
+        </p>
+        <p><a href="#"class="happy">Careers</a></p><br>
+        <p><a href="#" class="happy">Terms</a></p>
+    </section>
+    <section class="f2">
+        <p class="heading4">
+            Resourses 
+        </p>  <br>
+        <p>
+            <a href="#" class="happy">Blog</a> <br> <br>
+        </p>
+        <p>
+            <a href="#" class="happy">What's new</a> <br> <br>
+        </p>
+        <p><a href="#" class="happy">Downloads</a></p><br>
+        <p><a href="#" class="happy">Sitemap</a></p>
+    </section>
+    <section class="f2">
+        <p class="heading4">
+            Services 
+        </p>  <br>
+        <p>
+            <a href="#" class="happy">Home Delivery</a> <br> <br>
+        </p>
+        <p>
+            <a href="#" class="happy">Products</a> <br> <br>
+        </p>
+        <p><a href="#" class="happy">Menu</a></p>
+    </section>
+</section>
+</section>
+</body>
+
+</html>
